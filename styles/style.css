@@ -53,6 +53,17 @@ body{
 }
 
 /* TP 02 - Formulaire de recherche */
+
+.title {
+    letter-spacing: 3px;
+    font-size: 3.2em;
+    line-height: 48px;
+    color: #5543ca;
+    background: #5543ca;
+    background: linear-gradient(to right, #22007c 0%, #006bb6 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
 #recherche {
     padding-top: 50px;
 }
@@ -424,4 +435,74 @@ li {
 
 .widget-49 .widget-49-meeting-action a {
     text-transform: uppercase;
+}
+
+/* TP 04 - Créer utilisateur */
+
+.createUser {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+
+}
+.createUser .title {
+    letter-spacing: 3px;
+    font-size: 3.2em;
+    line-height: 48px;
+    padding-bottom: 48px;
+    color: #5543ca;
+    background: #5543ca;
+    background: linear-gradient(to right, #22007c 0%, #006bb6 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.create-form .form-field {
+    position: relative;
+    margin: 32px 0;
+}
+.create-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #5543ca;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+.create-form .input-text:focus {
+    outline: none;
+}
+.create-form .input-text:focus + .label,
+.create-form .input-text.not-empty + .label {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+}
+.create-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #5543ca;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out,
+    -webkit-transform .2s ease-in-out;
+}
+.create-form .submit-btn {
+    display: inline-block;
+    background-color: #000;
+    background: linear-gradient(to right, #22007c 0%, #006bb6 100%) !important;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width:200px;
+    cursor: pointer;
 }

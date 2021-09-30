@@ -12,10 +12,11 @@ no">
     <title>SGP - Accueil</title>
 </head>
 <body>
+<!-- TP01 Menu -->
 <div class="container-fluid px-0">
     <nav class="navbar navbar-expand-sm navbar-dark bg-black py-0 px-0">
         <a class="navbar-brand" href="#"><img id="logo" src="images/bootstrap.png" alt="">
-        &nbsp;&nbsp;&nbsp;Atelier Bootstrap
+            &nbsp;&nbsp;&nbsp;Atelier Bootstrap
         </a>
         <span class="v-line"></span>
         <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
@@ -29,6 +30,54 @@ no">
         </div>
     </nav>
 </div>
+
+<!-- TP02 Formulaire de recherche -->
+<div class="container" id="recherche">
+    <div id="rechercheTitre">
+        <h2>Les collaborateurs</h2>
+        <button type="button" class="btn btn-outline-info ">Ajouter utilisateur</button>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="input-group" id="adv-search">
+                <input type="text" class="form-control" placeholder="Nom ou prénom qui commencer par"/>
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label>Filtrer par département</label>
+                                        <select class="form-control">
+                                            <option value="0" selected>Tous les départements</option>
+                                            <option value="1">Comptabilité</option>
+                                            <option value="2">Ressources humaines</option>
+                                            <option value="3">Informatique</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nom ou prénom</label>
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Voir les collaborateurs désactivés</label>
+                                        <input class="form-control" type="checkbox"/>
+                                    </div>
+                                    <button type="submit" class="btn"><img src="https://img.icons8.com/ios-filled/50/000000/google-web-search.png" alt=""/></button>
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-group"><img id="btnRecherche"  src="https://img.icons8.com/ios-filled/50/000000/google-web-search.png" alt=""/></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

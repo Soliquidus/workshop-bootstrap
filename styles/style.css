@@ -551,3 +551,28 @@ hr.new1 {
     border-radius: 1px;
     font-size: 17px
 }
+
+/* TP 06 - Formulaire d'erreurs */
+
+#btnErreur {
+    display: flex;
+    justify-content: inherit;
+    width: 8rem;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+#modalBtns button {
+    display: inline-block;
+    background-color: #000;
+    background: linear-gradient(to right, #22007c 0%, #006bb6 100%) !important;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width:200px;
+    cursor: pointer;
+}

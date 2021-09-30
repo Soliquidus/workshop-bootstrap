@@ -8,7 +8,7 @@ no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>SGP - Créer utilisateur</title>
 </head>
 <body>
@@ -40,8 +40,8 @@ no">
             <label class="label" for="name">Nom</label>
         </div>
         <div class="form-field col-lg-6 ">
-            <input id="email" class="input-text js-input" type="email" required>
-            <label class="label" for="email">Prénom</label>
+            <input id="firstName" class="input-text js-input" type="text" required>
+            <label class="label" for="firstName">Prénom</label>
         </div>
         <div class="form-field col-lg-6 ">
             <input id="birthDate" class="input-text js-input" type="date" required>
@@ -52,20 +52,61 @@ no">
             <label class="label" for="socialSecurity">Numéro de sécurité sociale</label>
         </div>
         <div class="form-field col-lg-12">
-            <input id="message" class="input-text js-input" type="text" required>
-            <label class="label" for="message">Adresse</label>
+            <input id="address" class="input-text js-input" type="text" required>
+            <label class="label" for="address">Adresse</label>
         </div>
         <div class="form-field col-lg-12">
-            <input class="submit-btn" type="submit" value="Créer">
+            <input class="submit-btn" type="button" data-toggle="modal" data-target="#staticBackdrop" value="Créer">
         </div>
     </form>
 </section>
 
+<!-- TP 05 - Fenêtre modale -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body ">
+                <div class="text-right"><i class="fa fa-close close" data-dismiss="modal"></i></div>
+                <div class="px-4 py-5">
+                    <h5>Vous êtes sur le point de créer un nouvel utilisateur.</h5>
+                    <h4 class="mt-5 theme-color mb-5">Vérifiez les informations</h4> <span class="theme-color">Résumé</span>
+                    <div class="mb-3">
+                        <hr class="new1">
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <span class="font-weight-bold">Nom</span>
+                        <span class="font-weight-bold theme-color" id="resName"></span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <span class="font-weight-bold">Prénom</span>
+                        <span class="font-weight-bold theme-color" id="resFirstName"></span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <span class="font-weight-bold">Date de naissance</span>
+                        <span class="font-weight-bold theme-color" id="resBirthDate"></span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <span class="font-weight-bold">Numéro de sécurité sociale</span>
+                        <span class="font-weight-bold theme-color" id="resSocialSecurity"></span>
+                    </div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <span class="font-weight-bold">Adresse</span>
+                        <span class="font-weight-bold theme-color" id="resAddress"></span>
+                    </div>
+                    <div class="text-center mt-5">
+                        <button class="btn btn-primary">Annuler</button><button class="btn btn-primary">Confirmer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/modal.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-<script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

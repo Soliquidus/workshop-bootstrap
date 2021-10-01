@@ -636,6 +636,27 @@ hr.new1 {
     margin:0;
 }
 
+#userPic {
+    width: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 19rem;
+    margin-right: 19rem;
+}
+
+@media (max-width: 1206px) {
+    #userPic {
+        margin-left: 14rem;
+        margin-right: 12rem;
+    }
+}
+@media (max-width: 986px) {
+    #userPic {
+        margin-left: 10rem;
+        margin-right: 12rem;
+    }
+}
+
 #editForm .card-header h3{
     margin:0 0 0px;
     font-size:20px;

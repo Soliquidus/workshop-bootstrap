@@ -37,6 +37,14 @@ no">
         <div class="row">
             <h1 class="title">Editer l'utilisateur</h1>
             <div class="col-md-8 offset-md-2">
+                <div class="col-md-8">
+                    <h2>NOM Prénom - Matricule</h2>
+                    <div class="form-group">
+                        <label>Désactiver collaborateur</label>
+                        <input class="flex-wrap" type="checkbox"/>
+                    </div>
+                </div>
+
                 <div>
                     <div id="accordion" role="tablist" aria-multiselectable="true">
                         <div class="card">
@@ -55,6 +63,9 @@ no">
                             <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="">
                                 <section class="createUser">
                                     <form class="create-form row">
+                                        <div class="form-field col-lg-12">
+                                            <img id="userPic" src="images/user.png" alt="">
+                                        </div>
                                         <div class="form-field col-lg-6">
                                             <label id="labelGender" for="gender">Civilité</label>
                                             <select id="gender" class="input-text js-input" type="" required>
@@ -111,7 +122,7 @@ no">
                                             <label class="label" for="roleSelect">Département</label>
                                             <select id="roleSelect" class="input-text js-input" type="" required>
                                                 <option value="0" selected></option>
-                                                <option value="1" >Comptabilité</option>
+                                                <option value="1">Comptabilité</option>
                                                 <option value="2">Ressources humaines</option>
                                                 <option value="3">Informatique</option>
                                             </select>

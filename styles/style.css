@@ -576,3 +576,114 @@ hr.new1 {
     width:200px;
     cursor: pointer;
 }
+
+/* TP 07 - Formulaire d'édition de profil */
+#editForm section{
+    float:left;
+    width:100%;
+    padding:30px 0;
+}
+
+#collapseOne {
+    margin-top: -80px;
+}
+
+#collapseTwo {
+    margin-top: -80px;
+}
+
+#editForm .card {
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom:1px;
+    border:none;
+}
+#editForm .card-header:first-child {
+    border-radius: 0;
+}
+#editForm .card-header {
+    background-color: #f7f7f9;
+    margin-bottom: 0;
+    padding: 20px 1.25rem;
+    border:none;
+
+}
+#editForm .card-header a i{
+    float:left;
+    font-size:25px;
+    padding:5px 0;
+    margin:0 25px 0 0px;
+    color:#195C9D;
+}
+#editForm .card-header i{
+    float:right;
+    font-size:30px;
+    width:5%;
+    margin-top:8px;
+    margin-right:10px;
+}
+#editForm .card-header a{
+    width:97%;
+    float:left;
+    color:#565656;
+}
+#editForm .card-header p{
+    margin:0;
+}
+
+#editForm .card-header h3{
+    margin:0 0 0px;
+    font-size:20px;
+    font-family: 'Slabo 27px', serif;
+    font-weight:bold;
+    color:#3fc199;
+}
+#editForm .card-block {
+    -moz-box-flex: 1;
+    flex: 1 1 auto;
+    padding: 20px;
+    color:#232323;
+    box-shadow:inset 0px 4px 5px rgba(0,0,0,0.1);
+    border-top:1px solid #000;
+    border-radius:0;
+}
+
+#editForm .title {
+    margin-top: 30px;
+    margin-bottom: 8rem;
+}
+
+#labelGender {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #5543ca;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out,
+    -webkit-transform .2s ease-in-out;
+}
+
+#labelRole {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #5543ca;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out,
+    -webkit-transform .2s ease-in-out;
+}

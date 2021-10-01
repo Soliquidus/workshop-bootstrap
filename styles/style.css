@@ -764,3 +764,9 @@ th {
     margin-bottom: 20px
 }
 
+/* TP 09 - Tableau d'activité */
+
+#activity .title {
+    letter-spacing: 1px;
+}
+
